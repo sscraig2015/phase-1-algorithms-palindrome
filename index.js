@@ -1,6 +1,16 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  for(let i = 0; i < word.length; i++){
+    
+    found = true
+    
+    if (word.charAt(i) !== word.charAt(word.length - 1)) 
+      found = false
+      break;
+    
+  }
+  return found
 }
+
 
 /* 
   Add your pseudocode here
