@@ -1,14 +1,14 @@
 function isPalindrome(word) {
-  for(let i = 0; i < word.length; i++){
+  for(let i = 0; i <= word.length/2; i++){
     
     found = true
     
-    if (word.charAt(i) !== word.charAt(word.length - 1)) 
+    if (word.charAt(i) != word.charAt(word.length - 1 -i)) 
       found = false
       break;
     
   }
-  return found
+  return found 
 }
 
 
